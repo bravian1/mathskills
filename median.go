@@ -2,6 +2,8 @@ package main
 
 import "sort"
 
+//function that receives input in form of slice of float64 and calculates
+// median by sorting them and returning the value at the middle
 func Median(n []float64) int {
 	sort.Float64s(n)
 
