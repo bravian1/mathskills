@@ -17,6 +17,7 @@ func main() {
 	}
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
+	
 	matches := regexp.MustCompile(`^\d+.*$`)
 	nums := []float64{}
 	for scanner.Scan() {
